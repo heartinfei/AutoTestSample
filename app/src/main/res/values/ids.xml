@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="progress_layout_id" type="id" />
+    <!--settings page-->
+    <item name="parameter_tag" type="id" />
+    <item name="display_tag" type="id" />
+    <item name="printed_receipt_tag" type="id" />
+    <item name="hotkey_item_entity" type="id" />
+    <item name="hotkey_last_item_entity" type="id" />
+    <item name="hotkey_next_item_entity" type="id" />
+    <item name="hotkey_item_num" type="id" />
+    <!--end settings page-->
+</resources>

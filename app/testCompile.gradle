@@ -1,0 +1,23 @@
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    testImplementation "org.hamcrest:hamcrest-all:$hamcrest"
+    testImplementation "org.mockito:mockito-all:$mockito"
+
+    androidTestImplementation 'com.android.support.test.espresso:espresso-intents:3.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-contrib:3.0.1'
+
+    // Force usage of dependencies in the test app, since it is internally used by the runner module.
+    androidTestCompile 'com.android.support:support-annotations:' + support
+    androidTestCompile 'com.android.support:recyclerview-v7:' + support
+
+    androidTestImplementation "com.android.support.test:rules:$rulesVersion"
+    androidTestImplementation "com.android.support.test:runner:$runnerVersion"
+
+//    androidTestImplementation 'com.android.support.test.uiautomator:uiautomator-v18:2.1.3'
+    androidTestImplementation "org.hamcrest:hamcrest-library:$hamcrest"
+    androidTestImplementation "android.arch.persistence.room:testing:$android_arch"
+    androidTestImplementation "org.mockito:mockito-core:$mockito"
+    androidTestImplementation "com.google.dexmaker:dexmaker:$dexmaker"
+    androidTestImplementation "com.google.dexmaker:dexmaker-mockito:$dexmaker"
+}

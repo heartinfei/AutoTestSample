@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">测试Demo</string>
+    <string name="net_activity">网络测试</string>
+    <string name="intent_activity">Intent测试</string>
+    <string name="multi_window">多窗口测试</string>
+    <string name="fragment_test">Fragment测试</string>
+</resources>

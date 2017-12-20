@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.heartinfei.testsample.widget.ProgressLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.heartinfei.testsample.target.NetActivity">
+
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="8dp"
+            android:text="请求"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_clean"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:padding="8dp"
+            android:text="清除"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPanel"
+        tools:text="hello" />
+
+
+</com.example.heartinfei.testsample.widget.ProgressLayout>

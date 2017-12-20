@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="ProgressLayout">
+        <attr name="progressLayout" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DownLoadProgressBar">
+        <attr name="indicateNumPaddingRight" format="dimension" />
+        <attr name="downLoadedNotice" format="string" />
+    </declare-styleable>
+</resources>
