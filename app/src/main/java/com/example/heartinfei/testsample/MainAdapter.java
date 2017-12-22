@@ -26,13 +26,17 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.VH> {
         this.data.addAll(data);
     }
 
+    public ActivityInfo getItem(int i){
+        return data.get(i);
+    }
+
     @Override
     public VH onCreateViewHolder(ViewGroup parent, int viewType) {
         VH holder = new VH(LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_main,parent,false));
+                .inflate(R.layout.item_main, parent, false));
         holder.itemView.setOnClickListener((v) -> {
             ActivityInfo info = (ActivityInfo) v.getTag();
-            ComponentName componentName = new ComponentName(info.packageName,info.name);
+            ComponentName componentName = new ComponentName(info.packageName, info.name);
             Intent launchIntent = new Intent();
             launchIntent.setComponent(componentName);
             v.getContext().startActivity(launchIntent);
@@ -52,13 +56,17 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.VH> {
         return data.size();
     }
 
-    static class VH extends RecyclerView.ViewHolder {
+    public static class VH extends RecyclerView.ViewHolder {
         @BindView(R.id.tv)
         TextView tv;
 
         public VH(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
+        }
+
+        public String gettext() {
+            return tv.getText().toString();
         }
     }
 }

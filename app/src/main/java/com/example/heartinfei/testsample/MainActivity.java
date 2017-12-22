@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
                         Observable.create((ObservableEmitter<ActivityInfo> e) -> {
                             for (ActivityInfo activityInfo : activityInfos) {
                                 e.onNext(activityInfo);
+                                e.onNext(activityInfo);
+                                e.onNext(activityInfo);
+                                e.onNext(activityInfo);
+                                e.onNext(activityInfo);
+                                e.onNext(activityInfo);
+                                e.onNext(activityInfo);
                             }
                             e.onComplete();
                         })
